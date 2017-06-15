@@ -122,7 +122,7 @@ def main():
     sensor = BH1750(bus)
 
     light = sensor.measure_low_res()
-    print light
+    print int(light)
     #while True:
         #print "Sensitivity: {:d}".format(sensor.mtreg)
         #for measurefunc, name in [(sensor.measure_low_res, "Low Res "),
